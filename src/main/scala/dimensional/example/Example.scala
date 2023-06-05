@@ -30,9 +30,6 @@ import scala.util.NotGiven
   println("A liter is smaller than a three inch cube: " + (litre < (3 * inch) ~ _3))
   println("A liter is smaller than a four inch cube: " + (litre < (4 * inch) ~ _3))
 
-  val angle = 90 * degree
-  println(s"The sine of ${angle.asStringWith(360 * degree, "turns")} is ${sin(angle)}")
-
   summon[_9 =:= NatSum[_2, _7]]
   summon[_1 =:= NatRemainder[_9, _4]]
 
