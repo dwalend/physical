@@ -10,12 +10,12 @@ private inline def fractionalPart(x: Double): Double = x - math.floor(x)
  * @return the given dimension exponents as a string
  */
 def dimensionsAsString[
-  L2 <: IntT, T2 <: IntT, P2 <: IntT, M2 <: IntT
+  L2 <: IntT, T2 <: IntT, P2 <: IntT
 ](
-   l: L2, t: T2, p: P2, m: M2
+   l: L2, t: T2, p: P2
  ): String =
   Seq(
-     unitString(l, "m"), unitString(m, "kg"), unitString(t, "s"), unitString(p, "K"), 
+     unitString(l, "m"), unitString(t, "s"), unitString(p, "K"), 
   ).filter((i, s) => i != 0).sortBy((i, s) => -i).map((i, s) => s).mkString("·")
 
 /**

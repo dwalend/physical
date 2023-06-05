@@ -14,16 +14,7 @@ import scala.util.NotGiven
   println((v1 + v2).in(kilo(metre) / hour))
   println((v1 + v2).asStringWith(kilo(metre) / hour, "km/h"))
 
-  val waterDensity = 0.997 * kilogram / litre
-  println(waterDensity.asString)
-
   println(lightYear.in(giga(kilo(metre))))
-
-  println(s"A centipoise is ${centipoise.asString}.")
-  println(s"A poise is ${(100 * centipoise).asStringWith(pascal, "Pa")}.")
-
-  val myUnit = kilo(inch) * newton / hour
-  println("A poise is " + (100 * centipoise).asStringWith(myUnit, "MU"))
 
   println(litre.root(_3).asStringWith(centi(meter), "cm"))
 
