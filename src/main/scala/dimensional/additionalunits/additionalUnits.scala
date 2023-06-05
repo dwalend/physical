@@ -24,10 +24,6 @@ val tonOfTNT    : Energy = mega(largeCalorie)
 val wattHour    : Energy = watt * hour
 val kiloWattHour: Energy = kilo(wattHour)
 
-val shannon: Information = math.log(2) * nat
-val bit    : Information = shannon
-val byte   : Information = 8 * bit
-
 val kPH        : Velocity = kilo(metre) / hour
 val planckSpeed: Velocity = 299792458 * metre / second
 
